@@ -28,13 +28,13 @@ public class User {
     @Column(nullable = false, length = 50)
     private String lastName;
 
-    @Column(nullable = false, unique = true, length = 100)
+    @Column(nullable = true, unique = true, length = 100)
     private String email;
 
     @Column(nullable = false, unique = true, length = 15)
     private String phoneNumber;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String password;
 
     @Enumerated(EnumType.STRING)

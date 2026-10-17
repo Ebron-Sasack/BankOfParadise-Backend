@@ -1,6 +1,8 @@
 package com.BankOfParadise.entity;
 
 
+import com.BankOfParadise.enums.TransactionStatus;
+import com.BankOfParadise.enums.TransactionType;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -67,15 +69,4 @@ public class Transaction {
         createdAt = LocalDateTime.now();
     }
 
-    public enum TransactionType {
-        DEPOSIT,
-        WITHDRAWAL,
-        TRANSFER
-    }
-
-    public enum TransactionStatus {
-        PENDING,
-        SUCCESS,
-        FAILED
-    }
 }

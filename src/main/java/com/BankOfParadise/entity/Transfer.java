@@ -1,5 +1,6 @@
 package com.BankOfParadise.entity;
 
+import com.BankOfParadise.enums.TransferStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -59,9 +60,4 @@ public class Transfer {
         createdAt = LocalDateTime.now();
     }
 
-    public enum TransferStatus {
-        PENDING,
-        SUCCESS,
-        FAILED
-    }
 }
